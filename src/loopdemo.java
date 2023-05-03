@@ -89,9 +89,6 @@ public class loopdemo
         }
         System.out.println("Sum of all nos :"+sum);
 
-
-
-
         System.out.println("\noutside while loop");
     }
 }
