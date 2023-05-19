@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/*
 
+/*
 
 rollno=[1,2,3]
 student_arraylist=[1,"vimal",23,33,44,2,"vishal",34,55,66]
