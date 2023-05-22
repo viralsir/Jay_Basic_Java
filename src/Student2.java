@@ -36,7 +36,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Student
+public class Student2
 {
      int rollno;
      String name;
@@ -44,30 +44,37 @@ public class Student
      int science;
 
 
+    public int getRollno() {
+        return rollno;
+    }
 
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
 
-     void entry()
-     {
-         Scanner s=new Scanner(System.in);
+    public String getName() {
+        return name;
+    }
 
-         System.out.println("Enter Roll No:");
-         rollno=s.nextInt();
+    public void setName(String name) {
+        this.name = name;
+    }
 
-         System.out.println("Enter Name :");
-         name=s.next();
-         System.out.println("Enter Maths Marks:");
-         maths=s.nextInt();
-         System.out.println("Enter Science Marks:");
-         science=s.nextInt();
-     }
+    public int getMaths() {
+        return maths;
+    }
 
-     void view()
-     {
-         System.out.println("Roll No:"+rollno);
-         System.out.println("Name :"+name);
-         System.out.println("Maths :"+maths);
-         System.out.println("Science :"+science);
-     }
+    public void setMaths(int maths) {
+        this.maths = maths;
+    }
+
+    public int getScience() {
+        return science;
+    }
+
+    public void setScience(int science) {
+        this.science = science;
+    }
 
     public static void main(String[] args)
     {
@@ -76,12 +83,14 @@ public class Student
         //Student s2=new Student();
         //Student[] student=new Student[50];
 
-        ArrayList<Student> studentList=new ArrayList<Student>();
+        ArrayList<Student2> studentList=new ArrayList<Student2>();
 
         for (int index = 0; index < 2; index++)
         {
-            Student student=new Student();
-            student.entry();
+            Student2 student=new Student2();
+            System.out.println("Enter Roll No:");
+            student.setRollno(s.nextInt());
+
             studentList.add(student);
 
         }
@@ -101,9 +110,9 @@ public class Student
 
         }
    */
-        for (Student st:studentList)
+        for (Student2 st:studentList)
         {
-            st.view();
+            System.out.println("Roll No:"+st.getRollno());
 
         }
 
