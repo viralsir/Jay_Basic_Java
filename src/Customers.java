@@ -1,3 +1,5 @@
+import lib.Product;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,6 +26,7 @@ public class Customers extends Personal
         do
         {
               Product product=new Product();
+
               product.setProduct();
               this.totalAmount=this.totalAmount+ product.price;
               this.ProductList.add(product);
