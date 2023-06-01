@@ -1,11 +1,15 @@
 package Exception_handling;
 /*
   Exception Handling : -
-    Exception : IS A MESSAGE WHICH IS BEING DISPLAY WHEN RUN TIME ERROR IS OCCURED.
+  Exception : IS A MESSAGE WHICH IS BEING DISPLAY WHEN RUN TIME ERROR IS OCCURED.
 
     try
     catch
     finally
+    throws   ignore the exception compile time exception
+    throw    throw object of user define exception
+
+
 
  */
 
@@ -17,9 +21,11 @@ public class trycatchdemo
     public static void main(String[] args) {
 
         boolean flag=true;
-        while(flag==true) {
+        while(flag==true)
+        {
 
-            try {
+            try
+            {
                 Scanner s = new Scanner(System.in);
 
                 int no1 = 1, no2 = 1;
