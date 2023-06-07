@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package model;
 
 import java.sql.Connection;
@@ -14,8 +15,13 @@ import java.util.ArrayList;
 
 /**
  *  orm  : object raltional mapping  : JPA  Java persistant api    spring boot  bean
+ *     crud operation
+ *     thread
+ *        html,css,bootstrap, angular
  *
- * @author NUC
+ *        backend developer
+ *        rest api
+ *   @author NUC
  */
 public class StudentDB 
 {
@@ -132,6 +138,6 @@ public class StudentDB
        }
        return studentlist;
    }
-   
+
     
 }
